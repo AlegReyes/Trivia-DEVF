@@ -44,20 +44,20 @@ const cargarTrivia = async () => {//siempre usar async ,recordar que es una resp
 			<li>
 				<a href="#">Categoria</a>
 				<ul class="menu-vertical">
-					<li>Any Category</li>
-					<li>General Knowledge</li>
-					<li>Entertaiment: Books </li>
-          <li>Entertaiment: Film</li>
-          <li>Entertaiment: Music</li>
-          <li>Entertaiment: Musicals & Teatres </li>
-          <li>Entertaiment: Television</li>
-          <li>Entertaiment: Video Games</li>
-          <li>Entertaiment: Board Games</li>
-          <li>Science &Nature</li>
-          <li>Science: Computers</li>
-          <li>Science: Mathematics</li>
-          <li>Mythology</li>
-          <li>Sports</li>
+					<li id="AnyCategory">Any Category</li>
+					<li id="General Knowledge">General Knowledge</li>
+					<li id="Entertaiment: Books">Entertaiment: Books </li>
+          <li id="Entertaiment: Film">Entertaiment: Film</li>
+          <li id"Entertaiment: Music">Entertaiment: Music</li>
+          <li id="Entertaiment: Musicals & Teatres ">Entertaiment: Musicals & Teatres </li>
+          <li id="Entertaiment: Television">Entertaiment: Television</li>
+          <li id="Entertaiment: Video Games">Entertaiment: Video Games</li>
+          <li id="Entertaiment: Board Games">Entertaiment: Board Games</li>
+          <li id="Science &Nature">Science &Nature</li>
+          <li id="Science: Computers">Science: Computers</li>
+          <li id="Science: Mathematics">Science: Mathematics</li>
+          <li id="Mythology">Mythology</li>
+          <li id="Sports">Sports</li>
           <li>Geography</li>
           <li>History</li>
           <li>Politics</li>
@@ -137,16 +137,92 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 ////////////////////////////////////////////FUNCIONES PARA SELECCIONAR DIFICULTAD ,TIPO ETC.
-/* let pagina = 1;
-const btnAnterior = document.getElementById('btnAnterior');
-const btnSiguiente = document.getElementById('btnSiguiente');
+let categorias = 0;
+/* const btnAnterior = document.getElementById('btnAnterior');
+const btnSiguiente = document.getElementById('btnSiguiente'); */
 
 btnCategoria.addEventListener('click', () => {
-	if(pagina < 1000){
-		pagina += 1;
-		cargarPeliculas();
-	}
-});
+	const AnyCategory = document.getElementById('AnyCategory');
+  if (btnCategoria=AnyCategory){
+    categorias=url;
+  }
+  if(){
+
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  if(){
+    
+  }
+  
+	});
 
 btnDificultad.addEventListener('click', () => {
 	if(pagina < 1000){
@@ -160,6 +236,6 @@ btnTipo.addEventListener('click', () => {
 		pagina -= 1;
 		cargarPeliculas();
 	}
-}); */
+}); 
 cargarTrivia();
 
