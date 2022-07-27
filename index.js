@@ -40,7 +40,6 @@ const cargarTrivia = async () => {//siempre usar async ,recordar que es una resp
     <nav>
 		<ul class="menu-horizontal">
 			<li><a href="#">Inicio</a></li>
-
 			<li>
 				<a href="#">Categoria</a>
 				<ul class="menu-vertical">
@@ -71,7 +70,6 @@ const cargarTrivia = async () => {//siempre usar async ,recordar que es una resp
           <li>Entertaiment: Cartoon & Animations</li>
 				</ul>
 			</li>
-
 			<li>
 				<a href="#">Dificultad</a>
 				<ul class="menu-vertical">
@@ -81,7 +79,6 @@ const cargarTrivia = async () => {//siempre usar async ,recordar que es una resp
           <li>Hard</li>
 				</ul>
 			</li>
-
 			<li><a href="#">Tipo</a>
       <ul class="menu-vertical">
 					<li>Any Type</li>
@@ -89,7 +86,6 @@ const cargarTrivia = async () => {//siempre usar async ,recordar que es una resp
           <li>True/False</li>
 				</ul>
       </li>
-
 		</ul>
     
 	</nav>
@@ -136,10 +132,15 @@ function setFalseAnswers(answers) {
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
+
+function btn_categoria(category) {
+  category = category.data
+  return category.data
+}
 ////////////////////////////////////////////FUNCIONES PARA SELECCIONAR DIFICULTAD ,TIPO ETC.
-let categorias = 0;
-/* const btnAnterior = document.getElementById('btnAnterior');
-const btnSiguiente = document.getElementById('btnSiguiente'); */
+/*let categorias = 0;
+const btnAnterior = document.getElementById('btnAnterior');
+const btnSiguiente = document.getElementById('btnSiguiente'); 
 
 btnCategoria.addEventListener('click', () => {
 	const AnyCategory = document.getElementById('AnyCategory');
@@ -236,6 +237,5 @@ btnTipo.addEventListener('click', () => {
 		pagina -= 1;
 		cargarPeliculas();
 	}
-}); 
+}); */
 cargarTrivia();
-
