@@ -86,6 +86,9 @@ main_button.addEventListener('click', () => {
     container_trivia.innerHTML = ''
 });
 validar_respuesta.addEventListener('click', () => {
-    
+    if(correct_answer === getAnswer.value){
+        alert('algo')
+    }
+
 });
 getCategories();
