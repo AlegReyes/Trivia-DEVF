@@ -93,7 +93,7 @@ const cargarTrivia = async () => {//siempre usar async ,recordar que es una resp
 		</ul>
     
 	</nav>
-   `;
+  `;
 
     preguntas.results.forEach(pregunta => { 
         console.log(pregunta.question);
@@ -143,84 +143,84 @@ const btnSiguiente = document.getElementById('btnSiguiente'); */
 
 btnCategoria.addEventListener('click', () => {
 	const AnyCategory = document.getElementById('AnyCategory');
-  if (btnCategoria=AnyCategory){
-    categorias=url;
-  }
-  if(){
+  // if (btnCategoria=AnyCategory){
+  //   categorias=url;
+  // }
+  // if(){
 
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
-  if(){
+  // }
+  // if(){
     
-  }
+  // }
   
 	});
 
