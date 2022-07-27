@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia APP</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <section class="container_form">
+        <h1>Trivia APP</h1>
+        <div id="form_trivia" class="form_trivia" action="">
+            <label for="difficulty">Select difficulty</label>
+            <select name="difficulty" id="difficulty">
+                <option value="any" selected>Any difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <hr>
+            <label for="category">Category</label>
+            <select name="category" id="select_categories">
+                <option value="any" selected>Any category</option>
+            </select>
+            <hr>
+            <label for="type">Select type</label>
+            <select name="type" id="select_type">
+                <option value="any" selected>Any type</option>
+                <option value="multiple">Multiple choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+            <hr>
+            <button type="submit" id="main_button">Generate Trivia</button>
+        </div>
+    </section>
+    <section class="container_trivia" id="container_trivia">
+        <p>¿Pregunta 1?</p>
+        <input type="radio" name="respuesta1" id="kjabjsd">Response 1
+        <input type="radio" name="respuesta2" id="kjabjsd">Response 2
+    </section>
+</body>
+</html>
