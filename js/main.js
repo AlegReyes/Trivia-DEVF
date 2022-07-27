@@ -5,6 +5,7 @@ const select_type = document.getElementById("select_type");
 const main_button = document.getElementById("main_button");
 const container_trivia = document.getElementById("container_trivia");
 const validar_respuesta = document.getElementById("validar_respuesta");
+let arrayAnswer = [];
 
 const urlCategories = 'https://opentdb.com/api_category.php';
 const urlMain = 'https://opentdb.com/api.php?amount=10' //&category=21&difficulty=medium&type=boolean
@@ -42,40 +43,42 @@ const generateTrivia = () => {
     getQuestion(url);
 }
 const getQuestion = (data) => {
+    let id = 0;
     fetch(urlMain + data)
     .then((response) => {
         return response.json();
     }).then((data) => {
         data.results.forEach(questions => {
+            id++
             printQuestions(questions);
-            getAnswer(questions);
+            getAnswer(questions, id);
         });
     })
     .catch((error) => console.error(error))
 }
-const getAnswer = (questions) => {
+const getAnswer = (questions, id) => {
     let arr = [];
-    console.log(questions);
-    arr.push(questions.correct_answer)
+    arr.push(questions.correct_answer);
+    arrayAnswer.push(questions.correct_answer);
     questions.incorrect_answers.forEach((incorretAnswer) => {
         arr.push(incorretAnswer);
     })
     arr.sort(function (){ return Math.random() - 0.5});
     arr.forEach((answer) => {
-        printAnswer(answer);
+        printAnswer(answer, id);
     });
 }   
 const printQuestions = (element) => {
     let question = document.createElement('p');
     question.textContent = element.question;
-    console.log(element.question);
     container_trivia.appendChild(question);
 }
-const printAnswer = (answer) => {
+const printAnswer = (answer, id) => {
     let radio = document.createElement('input');
     let label = document.createElement('label');
     radio.type = 'radio';
     radio.value = answer;
+    radio.name = `answer${id}`;
     label.textContent = answer;
     container_trivia.appendChild(radio);
     container_trivia.appendChild(label);
@@ -83,9 +86,18 @@ const printAnswer = (answer) => {
 main_button.addEventListener('click', () => {  
     generateTrivia();
     validar_respuesta.style.display = 'block';
+    console.log(arrayAnswer);
     container_trivia.innerHTML = ''
 });
 validar_respuesta.addEventListener('click', () => {
-    
+    let valorFijo;
+    let puntaje = 0;
+    for (let i=1; i<11 ; i++) {
+        valorFijo = document.querySelector(`input[name="answer${i}"]:checked`).value;
+        if (arrayAnswer[i-1] === valorFijo) {
+            puntaje += 100;
+        }
+    }
+    alert(`Tu puntuacion fue de: ${puntaje}`)
 });
 getCategories();

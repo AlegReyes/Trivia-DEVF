@@ -86,8 +86,12 @@ h1 {
     height: 400px;
     width: 40%;
 }
+.container_trivia p {
+    font-size: 15px;
+    margin-top: 2.5px;
+}
 .container_trivia input, label {
-    margin-top: 25px;
+    font-size: 13px;
     margin-left: 15px;
 }
 .container_trivia button {
