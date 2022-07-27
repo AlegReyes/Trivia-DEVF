@@ -84,6 +84,7 @@ h1 {
     background-color: var(--white);
     border-radius: 0 10px 10px 0;
     height: 400px;
+    overflow: scroll;
     width: 40%;
 }
 .container_trivia p {
