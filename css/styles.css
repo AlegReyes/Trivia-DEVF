@@ -27,7 +27,7 @@ body {
     background-color: var(--white);
     border-radius: 10px 0 0 10px;
     color: var(--grayishBlue);
-    height: 400px;
+    height: 500px;
     padding: 15px;
     width: 30%;
 }
@@ -83,18 +83,36 @@ h1 {
 .container_trivia {
     background-color: var(--white);
     border-radius: 0 10px 10px 0;
-    height: 400px;
+    height: 500px;
     overflow: scroll;
     width: 40%;
 }
 .container_trivia p {
     font-size: 15px;
     margin-top: 2.5px;
+    padding:15px;;
+    background-color: lightcyan;
+    border-radius: 50px;
 }
 .container_trivia input, label {
     font-size: 13px;
     margin-left: 15px;
+    padding: 10px;
+    
 }
 .container_trivia button {
     display: none;
+}
+
+#validar_respuesta{
+    margin-top: 20px;
+    background-color: skyblue;
+    border: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    margin: auto;
+    font-size: 16px;
+}
+#validar_respuesta:hover{
+    background-color:powderblue;
 }
