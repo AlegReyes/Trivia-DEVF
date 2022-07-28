@@ -4,7 +4,7 @@ const select_difficulty = document.getElementById("difficulty");
 const select_type = document.getElementById("select_type");
 const main_button = document.getElementById("main_button");
 const container_trivia = document.getElementById("container_trivia");
-const validar_respuesta = document.getElementById("validar_respuesta");
+const btn_check = document.getElementById("btn_check");
 let arrayAnswer = [];
 
 const urlCategories = 'https://opentdb.com/api_category.php';
@@ -85,11 +85,11 @@ const printAnswer = (answer, id) => {
 };
 main_button.addEventListener('click', () => {  
     generateTrivia();
-    validar_respuesta.style.display = 'block';
+    btn_check.style.display = 'block';
     console.log(arrayAnswer);
     container_trivia.innerHTML = ''
 });
-validar_respuesta.addEventListener('click', () => {
+btn_check.addEventListener('click', () => {
     let valorFijo;
     let puntaje = 0;
     for (let i=1; i<11 ; i++) {
