@@ -86,20 +86,19 @@ h1 {
     height: 400px;
     overflow-y: scroll;
     height: 500px;
-    overflow: scroll;
     width: 40%;
 }
 .container_trivia p {
     font-size: 15px;
     margin-top: 2.5px;
-    padding:15px;;
+    padding: 15px;
     background-color: lightcyan;
     border-radius: 50px;
 }
 .container_trivia input, label {
     font-size: 13px;
-    margin-left: 15px;
-    padding: 10px;
+    margin-left: 10px;
+    padding: 5px;
     
 }
 .container_trivia button {
