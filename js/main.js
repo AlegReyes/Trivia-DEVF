@@ -69,9 +69,11 @@ const getAnswer = (questions, id) => {
     });
 }   
 const printQuestions = (element) => {
-    let question = document.createElement('p');
-    question.textContent = element.question;
-    container_trivia.appendChild(question);
+    container_trivia.insertAdjacentHTML("beforeend",`<p>${element.question}</p>`);
+    // let question = document.createElement('p');
+    // console.log(element.question);
+    // question.textContent = element.question
+    // container_trivia.appendChild(question);
 }
 const printAnswer = (answer, id) => {
     let radio = document.createElement('input');
@@ -79,7 +81,7 @@ const printAnswer = (answer, id) => {
     radio.type = 'radio';
     radio.value = answer;
     radio.name = `answer${id}`;
-    label.textContent = answer;
+    label.insertAdjacentHTML("beforeend", `${answer}`);
     container_trivia.appendChild(radio);
     container_trivia.appendChild(label);
 };
@@ -98,6 +100,7 @@ btn_check.addEventListener('click', () => {
             puntaje += 100;
         }
     }
+    arrayAnswer = [];
     alert(`Tu puntuacion fue de: ${puntaje}`)
 });
 getCategories();

@@ -83,13 +83,10 @@ h1 {
 .container_trivia {
     background-color: var(--white);
     border-radius: 0 10px 10px 0;
-<<<<<<< HEAD
     height: 400px;
     overflow-y: scroll;
-=======
     height: 500px;
     overflow: scroll;
->>>>>>> 227a61aeb1843e88ffe8d593663d9ff4bc6e3bb6
     width: 40%;
 }
 .container_trivia p {
@@ -109,7 +106,7 @@ h1 {
     display: none;
 }
 
-#validar_respuesta{
+#btn_check{
     margin-top: 20px;
     background-color: skyblue;
     border: 10px;
@@ -118,6 +115,6 @@ h1 {
     margin: auto;
     font-size: 16px;
 }
-#validar_respuesta:hover{
+#btn_check:hover{
     background-color:powderblue;
 }
